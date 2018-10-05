@@ -1,0 +1,9 @@
+---
+
+- hosts: servers
+  tasks:  
+      - name: apt-get update
+        become: true
+        apt:
+          upgrade: yes
+          update_cache: yes
