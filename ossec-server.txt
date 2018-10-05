@@ -1,0 +1,12 @@
+sudo apt-get update
+sudo apt-get upgrade
+apt-get install build-essential gcc make apache2 libapache2-mod-php7.0 php7.0 php7.0-cli php7.0-common apache2-utils unzip wget sendmail inotify-tools -y
+wget https://github.com/ossec/ossec-hids/archive/2.9.0.tar.gz
+tar -xvzf 2.9.0.tar.gz
+cd ossec-hids-2.9.0
+sudo sh install.sh
+en
+server
+default
+(yes to all options)
+made emailaddress root@localhost for now

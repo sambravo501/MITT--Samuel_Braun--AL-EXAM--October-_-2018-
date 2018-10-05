@@ -1,0 +1,13 @@
+sudo apt-get update
+sudo apt-get upgrade
+apt-get install build-essential gcc make apache2 libapache2-mod-php7.0 php7.0 p$
+wget https://github.com/ossec/ossec-hids/archive/2.9.0.tar.gz
+tar -xvzf 2.9.0.tar.gz
+cd ossec-hids-2.9.0
+sudo sh install.sh
+en
+agent
+default
+(yes to all options) 
+
+
